@@ -9,10 +9,14 @@ const carsByMake2: string[][] = [];
 const car = carMakers[0];
 const myCar = carMakers.pop();
 
-// prevent incompativle values
+// prevent incompatible values
 carMakers.push(100);
 
 // help with 'map'
 carMakers.map((car: string): string => {
   return car;
 });
+
+// flexible types
+const importantDates = [new Date(), '2030-10-10'];
+const importantDates2: (Date | string)[] = [new Date()];
